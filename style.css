@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+    /* Glass effect stuff */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.link__nav {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 300;
+
+}
+
+.link__nav:hover {
+    transition: color 0.3s;
+    color: #34c759;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 100px;
+    height: 50vh;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: overlay;
+    text-align: center;
+    align-content: center;
+}
+
+.hero__title {
+    color: #f5f5f5;
+}
+
+.hero__description {
+    color: #81da76;
+}
+
+.hero__highlight {
+    color: #dbfbe0;
+}
+
+.feature {
+    font-family: "Poppins", Times, serif;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature__container {
+    flex-basis: 50%;
+    object-fit: cover;
+}
+
+.feature__image {
+    width: 100%;
+    height: 100%;
+}
+
+.feature__image-container {
+    flex-basis: 50%;
+}
+
+.feature__item {
+    padding: 30px 0;
+}
+
+.feature__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #23c93c;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature__title--selected {
+    text-decoration: none;
+}
+
+.feature__description {
+    /* text-align: right; */
+    line-height: 2.4rem;
+}
+
+.cta {
+    padding: 100px;
+    background-color: #5bb471;
+    color: #ffff;
+    text-align: center;
+}
+
+.cta__title {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.cta__button--primary:hover {
+    background-color: #d0d0d0;
+    cursor: pointer;
+}
+
+.cta__description {
+    padding: 15px 0;
+    color: #dbdbdb;
+    font-weight: 300;
+}
+
+.cta__button {
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.video {
+    text-align: center;
+    padding: 100px;
+    font-weight: 500;
+}
+
+.video__title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.video__description {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #6e6e6e;
+}
+
+.video__controls {
+    margin-top: 20px;
+}
+
+.video__button {
+    border: 1px solid #5bb471;
+    background: none;
+    padding: 10px 20px;
+    color: #5bb471;
+}
+
+.video__button--primary {
+    color: #5bb471;
+    margin: 10px;
+}
+
+.video__button--primary:hover {
+    background-color: #5bb471;
+    color: white;
+    cursor: pointer;
+}
+
+.video__button--secondary {
+    color: #5bb471;
+    margin: 10px;
+}
+
+.video__button--secondary:hover {
+    background-color: #5bb471;
+    color: white;
+    cursor: pointer;
+}
+
+.video__container {
+    background-image: url("images/video.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.programs {
+    padding: 100px;
+    background-color: #eee;
+    padding-bottom: 200px;
+}
+
+.program__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.program__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0;
+    height: 500px;
+    background: none;
+    gap: 15px;
+    border-radius: 4px;
+    flex-basis: 30%;
+}
+
+.programs__card-img {
+    width: 100%;
+    height: 700px;
+    min-width: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.programs_button {
+    background-color: #34c759;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.programs_button:hover {
+    background-color: #2db14e;
+
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    gap: 60px;
+    background-color: #f8f9fa;
+}
+
+.element__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.element__left {
+    flex: 1;
+}
+
+.element__right {
+    flex: 1;
+}
+
+.element__subtitle {
+    color: #5d5d5d;
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+
+.element__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.element__placeholder {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.element__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.element__list-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #5d5d5d;
+}
+
+.element__list-item:before {
+    content: "->";
+    margin-right: 10px;
+    color: #34c759;
+}
+
+.element__form--group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.element__form--group label {
+    color: #333;
+    font-weight: 500;
+}
+
+.element__form--group input,
+.element__form--group select {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.element__form--group input:focus,
+.element__form--group select:focus {
+    outline: none;
+    border-color: #34c759;
+    box-shadow: 0 0 0 2px rgba(52, 199, 89, 0.2);
+}
+
+.element__form--group select {
+    cursor: pointer;
+    background-color: white;
+}
+
+.element__form--group option {
+    padding: 8px;
+}
+
+.element__button {
+    background-color: #34c759;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.element__button:hover {
+    background-color: #2db14e;
+}
